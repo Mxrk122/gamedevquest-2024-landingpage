@@ -6,6 +6,10 @@ body{
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*general settings*/
 .scroll-container, .section{
     height: 100vh;
@@ -31,3 +35,61 @@ body{
 
     scroll-snap-align: start;
 }
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Gasoek One';
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 1;	
+    text-shadow: 6px 6px 6px rgba(0,50,0,0);
+    text-align: center;
+    text-shadow: 0px 11px 0px #340A91;
+}
+
+p {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/*Navbar*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.scroll-container {
+    margin-top: 60px;
+}
+
