@@ -1,0 +1,68 @@
+.workshops-container{
+    background-image: url('../resources/SVG/Desktop/sec2/BG_S2.svg');
+}
+
+.workshops-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    width: 60%;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.workshops-info > h1{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-family: 'Gasoek One';
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1;	
+    text-shadow: 6px 6px 6px rgba(0,50,0,0);
+    text-align: center;
+    text-shadow: 0px 11px 0px #340A91;
+}
+
+.workshops-info > p{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.workshop-grid{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.grid-item > p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.grid-img{
+    width: 130px;
+    height: 130px;
+}
+
+.grid-img > img{
+    max-width: 100%;
+    max-height: 100%;
+}

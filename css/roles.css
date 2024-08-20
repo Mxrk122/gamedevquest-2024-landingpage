@@ -1,0 +1,85 @@
+.roles-container{
+    flex-direction: row;
+    background-image: url('../resources/SVG/Desktop/sec4/BG_S4.svg');
+}
+
+.roles-info{
+    width: 40%;
+    margin: 50px;
+}
+
+.roles-info > h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.roles-info > p{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.characters-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.characters-row > img{
+    width: 150px;
+    height: auto;
+}
+
+/*slider*/
+.card-slider{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container > {
+    height: 80vh;    
+}
+
+.container > .card{
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container > .card.active {
+    display: block; /* Muestra la imagen actual */
+    opacity: 1; /* La imagen es completamente visible */
+}
+
+.card > img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-slider > .button{
+    margin-top: 50%;
+}
+
+.next, .prev{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-right: 30px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.next{
+    border-right: none;
+    border-left: 30px solid rgb(255, 255, 255);
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Montserrat";
+    overflow: hidden;
+    color: aliceblue;
+    margin: 0px;
+}
+
+/*general settings*/
+.scroll-container, .section{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.scroll-container{
+    overflow: auto;
+
+    -webkit-scroll-snap-type: y mandatory;
+      -ms-scroll-snap-type: y mandatory;
+          scroll-snap-type: y mandatory;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    scroll-snap-align: start;
+}

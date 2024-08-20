@@ -1,0 +1,23 @@
+.agenda-container{
+    background-image: url('../resources/SVG/Desktop/sec5/BG_S5.svg');
+    align-items: end;
+}
+
+.agenda{
+    width: 60%;
+    padding-right: 50px;
+}
+
+.agenda > h1{
+    color: #FFF200;
+}
+
+.agenda > h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.agenda > h3{
+    font-size: 18px;
+    text-align: center;
+}
