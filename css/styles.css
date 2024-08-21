@@ -57,11 +57,16 @@ p {
 
 /*Navbar*/
 .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
+    height: 7%;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #002E72;
     z-index: 1000; 
 }
 
@@ -70,7 +75,13 @@ p {
     margin: 0;
     padding: 0;
     display: flex;
+    width: 60%;
     justify-content: space-around;
+}
+
+.navbar img {
+    width: auto;
+    height: 100%;
 }
 
 .navbar li {
@@ -78,15 +89,25 @@ p {
 }
 
 .navbar a {
+    font-size: 12px;
+    font-weight: 900;
+    width: 139px;
+    border-radius: 25px;
     display: block;
-    padding: 15px;
+    padding: 10px;
     color: white;
     text-decoration: none;
     text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
 }
 
 .navbar a:hover {
-    background-color: #575757;
+    background-color: #FFF200;
+    color: #002E72;
+    border-style: solid;
+    border-color: #FFF200;
 }
 
 .scroll-container {

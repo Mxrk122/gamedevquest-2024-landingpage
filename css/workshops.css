@@ -11,7 +11,7 @@
 }
 
 h3{
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-align: center;
     margin: 0px;
 }
@@ -26,46 +26,31 @@ h3{
 }
 
 
-/* Diseño base para pantallas grandes */
-.workshop-grid {
+.workshop-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas fluidas */
-    grid-gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: 400px 400px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
-.grid-item {
+.grid-item{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-.grid-item > p {
+.grid-item > p{
     text-align: center;
     font-weight: 400;
-    width: 100%;
+    font-size: 1vw;
 }
 
-.grid-img {
+.grid-img{
     width: 130px;
     height: 130px;
 }
-
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .grid-img {
-        width: 100px; /* Ajusta el tamaño de la imagen */
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-img {
-        width: 80px; /* Ajusta el tamaño de la imagen para pantallas muy pequeñas */
-        height: 80px;
-    }
-}
-
 
 .grid-img > img{
     max-width: 100%;
