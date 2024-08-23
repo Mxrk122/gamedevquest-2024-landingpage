@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     width: 40%;
+    margin-bottom: 80px;
 }
 
 .main-content > img{
@@ -34,9 +35,10 @@
 }
 
 .main-section-info > button{
-    margin-bottom: 40px;
+    
     align-items: center;
     background-color: #002E72;
+    color: white;
     width: 188px;
     height: 38px;
     border: 0;
@@ -44,12 +46,24 @@
     box-sizing: border-box;
     cursor: pointer;
     touch-action: manipulation;
-    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     user-select: none;
     -webkit-user-select: none;
     vertical-align: middle;
     font-size: 16px;
     font-weight: 900;
+
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.main-section-info > button:hover {
+    background-color: #FFF200; /* Cambia el color */
+    transform: scale(1.7); /* Aumenta el tamaño del botón */
+    color: #002E72;
+    
+    
+    margin-bottom: 30px; /* Aumenta el margen superior */
 }
 
 .img-container{
