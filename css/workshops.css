@@ -43,6 +43,8 @@ h3{
 
 .grid-item > p {
     text-align: center;
+    font-size: 1vw;
+    line-height: 20px;
     font-weight: 400;
     width: 100%;
 }
