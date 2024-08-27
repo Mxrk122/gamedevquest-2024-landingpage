@@ -8,6 +8,7 @@ body{
 
 html {
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*general settings*/
@@ -33,7 +34,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
 
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 h1 {
