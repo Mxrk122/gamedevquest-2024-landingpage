@@ -66,7 +66,7 @@ h3{
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     height: 7%;
@@ -82,7 +82,7 @@ h3{
     margin: 0;
     padding: 0;
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -93,12 +93,13 @@ h3{
 
 .navbar li {
     display: inline;
+    width: 10%;
 }
 
 .navbar a {
     font-size: 12px;
     font-weight: 900;
-    width: 139px;
+    width: 100%;
     border-radius: 25px;
     display: block;
     padding: 10px;
@@ -117,6 +118,13 @@ h3{
     border-color: #FFF200;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
 .scroll-container {
     margin-top: 60px;
 }
@@ -131,6 +139,44 @@ h3{
         font-size: 15px;
         text-align: center;
         margin: 0px;
+    }
+
+    .navbar > a {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 840px) {
+    .aux-img{
+        display: none;
+    }
+    .navbar ul {
+        display: none; /* Oculta la lista por defecto */
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        background-color: #002E72;
+    }
+
+    .navbar ul.show {
+        display: flex; /* Muestra la lista cuando se hace clic en el ícono */
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+    }
+
+    .navbar img {
+        width: 40px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    .navbar li {
+        display: inline;
+        width: 200px;
+        margin-right: 50px;
     }
 }
 
