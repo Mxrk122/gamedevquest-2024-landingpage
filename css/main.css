@@ -26,14 +26,6 @@
     align-items: center;
 }
 
-.main-section-info > h1{
-    
-}
-
-.main-section-info > p{
-    
-}
-
 .main-section-info > button{
     
     align-items: center;
@@ -78,4 +70,23 @@
 .img-container > img{
     width: auto;
     height: 80%;
+}
+
+@media (max-width: 900px) {
+    .main-container{
+        flex-direction: column;
+    }
+
+    .main-content{
+        order: -1;
+        width: 100%;
+    }
+
+    .img-container{
+        display: inline-flex;
+    }
+
+    .img-container > img{
+        height: 100%;
+    }
 }

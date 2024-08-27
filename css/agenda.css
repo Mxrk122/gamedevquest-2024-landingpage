@@ -21,3 +21,10 @@
     font-size: 18px;
     text-align: center;
 }
+
+@media (max-width: 1050px) {
+    .agenda{
+        width: 100%;
+        padding: 0px;
+    }
+}
