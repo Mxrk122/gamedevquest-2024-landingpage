@@ -152,6 +152,10 @@ h3{
     .aux-img{
         display: none;
     }
+
+    .navbar{
+        justify-content: space-between;
+    }
     .navbar ul {
         display: none; /* Oculta la lista por defecto */
         flex-direction: column;
@@ -170,10 +174,12 @@ h3{
 
     .menu-icon {
         display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+        margin-right: 20px;
     }
 
     .navbar img {
         width: 40px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+        margin-left: 20px;
     }
 
     .navbar li {
