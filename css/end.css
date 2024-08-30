@@ -1,0 +1,44 @@
+.end-container{
+    background-image: url('../resources/SVG/Desktop/sec6/BG_S6.svg');
+    align-items: end;
+}
+
+.end{
+    width: 60%;
+    padding-right: 50px;
+}
+
+.end > h1 {
+    font-size: 50px;
+}
+
+.end > h2{
+    width: 50%;
+}
+
+.end > img {
+    width: auto;
+    height: 300px;
+}
+
+.end > button {
+    margin-top: 50px;
+}
+
+
+@media (max-width: 1050px) {
+
+    .end-container{
+        background-image: url('../resources/SVG/Desktop/sec3/BG_S3.svg');
+    }
+
+    .end{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .end > p{
+        /*color: #002E72;*/
+        width: 70%;
+    }
+}

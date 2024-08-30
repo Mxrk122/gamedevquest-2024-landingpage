@@ -14,4 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
     loadSection('experts-section', 'sections/experts.html');
     loadSection('roles-section', 'sections/roles.html');
     loadSection('agenda-section', 'sections/agenda.html');
+    loadSection('end-section', 'sections/end.html');
 });
