@@ -110,3 +110,24 @@
         font-weight: 400;
     }
 }
+
+@media (max-width: 600px) {
+    .card > img {
+        height: auto;
+        width: 200px;
+    }
+
+    .next, .prev{
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+
+        border-right: 20px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .next{
+        border-right: none;
+        border-left: 20px solid rgb(255, 255, 255);
+    }
+}

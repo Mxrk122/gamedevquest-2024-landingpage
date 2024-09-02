@@ -90,3 +90,9 @@
         height: 200px;
     }
 }
+
+@media (max-width: 600px) {
+    .main-section-info{
+        margin-top: 0px;
+    }
+}
