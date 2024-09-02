@@ -42,3 +42,9 @@
         width: 70%;
     }
 }
+
+@media (max-width: 600px) {
+    .end {
+        margin-bottom: 80px;
+    }
+}

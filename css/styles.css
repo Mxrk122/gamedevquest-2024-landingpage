@@ -34,7 +34,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 h1 {
@@ -148,7 +148,19 @@ h3{
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 600px) {
+
+    .scroll-container{
+        -webkit-scroll-snap-type: unset;
+            -ms-scroll-snap-type: unset;
+                scroll-snap-type: unset;
+    }
+
+    .section{
+        height: fit-content;
+        min-height: 100vh;
+    }
+
     .aux-img{
         display: none;
     }

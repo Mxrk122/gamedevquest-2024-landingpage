@@ -78,7 +78,16 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+
+    .workshop-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .grid-img {
         width: 80px; /* Ajusta el tamaño de la imagen para pantallas muy pequeñas */
         height: 80px;
