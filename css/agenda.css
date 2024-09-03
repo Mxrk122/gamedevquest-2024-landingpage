@@ -10,6 +10,7 @@
 
 .agenda > h1{
     color: #FFF200;
+    margin-top: 0px;
 }
 
 .agenda > h2{
@@ -20,6 +21,10 @@
 .agenda > h3{
     font-size: 18px;
     text-align: center;
+}
+
+.agenda > button{
+    background-color: #00B6F8ff;
 }
 
 @media (max-width: 1050px) {
