@@ -27,14 +27,15 @@
 
 .end-logos{
     margin-top: 30px;
+    margin-right: 34px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 
 .end-logos > img {
-    width: 110px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
 
 
@@ -55,11 +56,12 @@
     }
 
     .end-logos{
+        margin-right: 0px;
         justify-content: space-evenly;
     }
 
     .end-logos > img {
-        width: 90px;
+        height: 90px;
     }
 
 }
