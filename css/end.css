@@ -25,6 +25,13 @@
     margin-top: 50px;
 }
 
+.end-logos{
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 @media (max-width: 1050px) {
 
@@ -40,6 +47,10 @@
     .end > p{
         /*color: #002E72;*/
         width: 70%;
+    }
+
+    .end-logos > img {
+        width: 100px;
     }
 }
 
