@@ -32,6 +32,11 @@
     justify-content: space-around;
 }
 
+.end-logos > img {
+    width: 110px;
+    height: auto;
+}
+
 
 @media (max-width: 1050px) {
 
@@ -49,9 +54,14 @@
         width: 70%;
     }
 
-    .end-logos > img {
-        width: 100px;
+    .end-logos{
+        justify-content: space-evenly;
     }
+
+    .end-logos > img {
+        width: 90px;
+    }
+
 }
 
 @media (max-width: 600px) {
