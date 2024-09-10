@@ -16,7 +16,7 @@
 .characters-row{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -71,5 +71,12 @@
 .next{
     border-right: none;
     border-left: 30px solid rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 1280px) {
+    .roles-info {
+        width: 600px;
+        margin: 80px 0;
+    }
 }
 

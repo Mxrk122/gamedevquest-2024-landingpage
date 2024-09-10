@@ -1,6 +1,10 @@
 .agenda-container {
-    background-image: url('../resources/SVG/Desktop/sec5/BG_S5.svg');
-    align-items: flex-start;
+    background-image: url('../resources/SVG/Desktop/sec2/BG_S2.svg');
+    align-items: center;
+    background-color: #002e72;
+    padding: 200px 0; 
+    background-size: contain;
+    background-position: right;
 }
 
 .agenda > h1 {

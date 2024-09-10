@@ -7,6 +7,7 @@
     background-image: url('../resources/SVG/Desktop/sec1/BG_S1.svg'); 
     background-color: #006be3;
     background-position: bottom;
+    background-size: cover;
     padding-bottom: 450px;
     position: relative;
     overflow: hidden;
@@ -68,5 +69,69 @@
     transform: scale(1.7); /* Aumenta el tamaño del botón */
     color: #002E72;
     margin-bottom: 15px; /* Aumenta el margen superior */
+}
+
+@media screen and (min-width: 1024px) {
+    .main-section > section {
+        padding-bottom: 100px;
+    }
+
+    .main-section-info {
+        width: 360px;
+    }
+
+    .main-section > section > .img-left {
+        width: 300px;
+        left: 0;
+        top: 100px;
+    }
+
+    .main-section > section > .img-right {
+        width: 400px;
+        right: -80px;
+        top: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .main-section-info {
+        width: 500px;
+    }
+
+   .main-section > section > .img-left {
+        width: 500px;
+        left: 0;
+        top: 0;
+    }
+
+    .main-section > section > .img-right {
+        width: 600px;
+        right: -80px;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1980px) {
+    .main-section > section {
+        padding: 200px 0;
+    }
+
+    .main-section-info {
+        width: 800px;
+    }
+
+   .main-section > section > .img-left {
+        width: 500px;
+        top: 200px;
+        left: 50%;
+        margin-left: -900px;
+    }
+
+    .main-section > section > .img-right {
+        width: 600px;
+        top: 200px;
+        left: 50%;
+        margin-left: 300px;
+    }
 }
 
