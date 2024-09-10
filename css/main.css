@@ -1,33 +1,47 @@
-.main-container{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url('../resources/SVG/Desktop/sec1/BG_S1.svg'); 
-}
-
-.main-content{
+.main-section > section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    margin-bottom: 80px;
+    background-repeat: no-repeat;
+    background-image: url('../resources/SVG/Desktop/sec1/BG_S1.svg'); 
+    background-color: #006be3;
+    background-position: bottom;
+    padding-bottom: 450px;
+    position: relative;
+    overflow: hidden;
 }
 
-.main-content > img{
+.main-section > section > img {
     width: 266px;
     height: auto;
 }
 
-.main-section-info{
-    margin-top: 40px;
+.main-section > section > .img-left,
+.main-section > section > .img-right {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+
+.main-section > section > .img-left {
+    width: 300px;
+    left: 0;
+}
+
+.main-section > section > .img-right {
+    width: 400px;
+    right: -80px;
+}
+
+.main-section-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
 }
 
-.main-section-info > button{
-    
+.main-section-info > button {
     align-items: center;
     background-color: #002E72;
     color: white;
@@ -43,8 +57,8 @@
     vertical-align: middle;
     font-size: 16px;
     font-weight: 900;
-
     transition: all 0.3s ease;
+
     position: relative;
     z-index: 1;
 }
@@ -53,46 +67,6 @@
     background-color: #FFF200; /* Cambia el color */
     transform: scale(1.7); /* Aumenta el tamaño del botón */
     color: #002E72;
-    
-    
     margin-bottom: 15px; /* Aumenta el margen superior */
 }
 
-.img-container{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.img-container > img{
-    width: auto;
-    height: 80%;
-}
-
-@media (max-width: 900px) {
-    .main-container{
-        flex-direction: column;
-    }
-
-    .main-content{
-        order: -1;
-        width: 100%;
-    }
-
-    .img-container{
-        display: inline-flex;
-    }
-
-    .img-container > img{
-        height: 200px;
-    }
-}
-
-@media (max-width: 600px) {
-    .main-section-info{
-        margin-top: 0px;
-    }
-}

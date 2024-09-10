@@ -15,7 +15,9 @@
 </head>
 <body>   
     <nav class="navbar">
-        <img src="./resources/Logos/Logoaniversario.webp" />
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <img class="center-img" src="./resources/Logos/GameDevGTLogo.svg" />
+        <img class="logo" src="./resources/Logos/10.svg" />
         <ul>
             <li><a href="#main-section">Inicio</a></li>
             <li><a href="#workshops-section">Workshops</a></li>
@@ -24,12 +26,10 @@
             <li><a href="#agenda-section">Agenda</a></li>
             <li><a href="#end-section">Inscríbete</a></li>
         </ul>
-        <img class="aux-img" src="./resources/Logos/Logoaniversario.webp" />
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
 
     <div class="scroll-container"> 
-        <div id="main-section"></div>
+        <div id="main-section" class="main-section"></div>
         <div id="workshops-section"></div>
         <div id="experts-section"></div>
         <div id="roles-section"></div>
