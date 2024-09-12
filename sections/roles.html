@@ -11,8 +11,8 @@
         </div>
     </div>
     <div class="card-slider">
-        <div onclick="nextimg(-1)" class="prev"></div>
-        <div class="container">
+        <div onclick="nextimg(-1, 'roles-slider')" class="prev"></div>
+        <div class="container" id="roles-slider">
             <div class="card active">
                 <img src="../resources/SVG/Desktop/sec4/Cards/Amber_Card.webp">
             </div>
@@ -26,6 +26,10 @@
                 <img src="../resources/SVG/Desktop/sec4/Cards/Kaiser_Card.webp">
             </div>
         </div>
-        <div onclick="nextimg(1)" class="next"></div>
+        <div onclick="nextimg(1, 'roles-slider')" class="next"></div>
     </div>
+    <script type="application/javscript">
+    nextimg(0, 'roles-slider');
+    </script>
+
 </section>

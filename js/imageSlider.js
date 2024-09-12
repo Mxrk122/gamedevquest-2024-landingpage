@@ -1,33 +1,40 @@
-var imageno = 1; // Inicia en la primera imagen
-displayimg(imageno); // Muestra la primera imagen cuando se carga la página
+function nextimg(n, divid) {
+    console.log('nextimg', divid)
+    // Get the div by its ID and retrieve the current imageno from the data attribute
+    var div = document.getElementById(divid);
+    var imageno = parseInt(div.getAttribute("data-imageno")) || 1;
+    console.log('imageno', imageno)
 
-function nextimg(n) {
-    displayimg(imageno += n);
+    // Increment or decrement the imageno
+    displayimg(imageno + n, divid);
 }
 
-function currentSlide(n) {
-    displayimg(imageno = n);
-}
+function displayimg(n, divid) {
+    console.log('divid', divid)
+    var div = document.getElementById(divid);
+    var images = div.getElementsByClassName("card");
 
-function displayimg(n) {
-    var i;
-    var images = document.getElementsByClassName("card");
+    // Get the total number of images
+    var totalImages = images.length;
 
-    if (n > images.length) {
-        imageno = 1;
+    // Adjust imageno based on bounds
+    if (n > totalImages) {
+        n = 1;
+    } else if (n < 1) {
+        n = totalImages;
     }
 
-    if (n < 1) {
-        imageno = images.length;
-    }
+    // Update the imageno in the data attribute
+    div.setAttribute("data-imageno", n);
 
-    for (i = 0; i < images.length; i++) {
+    // Remove 'active' class from all images
+    for (var i = 0; i < totalImages; i++) {
         images[i].classList.remove("active");
     }
 
-    // Verifica si la imagen existe antes de intentar acceder a su classList
-    if (images[imageno - 1]) {
-        images[imageno - 1].classList.add("active"); // Añade la clase 'active' a la imagen visible
+    // Add 'active' class to the current image
+    if (images[n - 1]) {
+        images[n - 1].classList.add("active");
     }
 }
 

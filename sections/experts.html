@@ -3,26 +3,37 @@
         <h1>APRENDE CON EXPERTOS</h1>
         <h3>¡Expertos en desarrollo, programación, arte, música y escritura se unen a esta aventura!</h3>
     </div>
-    <div class="experts-grid">
-        <div class="expert">
-            <div class="expert-container">
-                <img src="../resources/SVG/Desktop/sec3/Invitado1.webp" />
+    <div class="card-slider">
+        <div onclick="nextimg(-1, 'invitados-slider')" class="prev"></div>
+        <div class="container" id="invitados-slider">
+            <div class="card active">
+                <img src="../resources/Invitados/Invitados_Feed-03.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-04.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-05.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-06.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-09.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-10.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-11.jpg">
+            </div>
+            <div class="card">
+                <img src="../resources/Invitados/Invitados_Feed-12.jpg">
             </div>
         </div>
-        <div class="expert">
-            <div class="expert-container">
-                <img src="../resources/SVG/Desktop/sec3/Invitado3.webp" />
-            </div>
-        </div>
-        <div class="expert">
-            <div class="expert-container">
-                <img src="../resources/SVG/Desktop/sec3/Invitado4.webp" />
-            </div>
-        </div>
-        <div class="expert">
-            <div class="expert-container">
-                <img src="../resources/SVG/Desktop/sec3/Invitado5.webp" />
-            </div>
-        </div>
+        <div onclick="nextimg(1, 'invitados-slider')" class="next"></div>
     </div>
+    <script type="application/javscript">
+    nextimg(0, 'invitados-slider');
+    </script>
 </section>
