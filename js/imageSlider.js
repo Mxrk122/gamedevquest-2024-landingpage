@@ -1,16 +1,13 @@
 function nextimg(n, divid) {
-    console.log('nextimg', divid)
     // Get the div by its ID and retrieve the current imageno from the data attribute
     var div = document.getElementById(divid);
     var imageno = parseInt(div.getAttribute("data-imageno")) || 1;
-    console.log('imageno', imageno)
 
     // Increment or decrement the imageno
     displayimg(imageno + n, divid);
 }
 
 function displayimg(n, divid) {
-    console.log('divid', divid)
     var div = document.getElementById(divid);
     var images = div.getElementsByClassName("card");
 
