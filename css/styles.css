@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     font-family: "Montserrat";
-    overflow: hidden;
     color: aliceblue;
-    margin: 0px;
 }
 
 html {
@@ -11,18 +9,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body, html {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /*general settings*/
 .scroll-container, .section{
-    height: 100vh;
+    /* min-height: 100vh; */
     margin: 0 auto;
 }
 
 .scroll-container{
     overflow: auto;
-
-    -webkit-scroll-snap-type: y mandatory;
-      -ms-scroll-snap-type: y mandatory;
-          scroll-snap-type: y mandatory;
 }
 
 .section{
@@ -33,20 +38,16 @@ html {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-
-    scroll-snap-align: start;
 }
 
 h1 {
-    margin-top: 40px;
-    margin-bottom: 40px;
     font-family: 'Gasoek One';
     font-weight: 400;
-    font-size: 100px;
-    line-height: 1;	
-    text-shadow: 6px 6px 6px rgba(0,50,0,0);
+    font-size: 42px;
+    line-height: 50px;	
     text-align: center;
     text-shadow: 0px 11px 0px #340A91;
+    margin: 0;
 }
 
 p {
@@ -68,22 +69,35 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    height: 7%;
+    position: sticky;
+    height: 60px;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #002E72;
     z-index: 1000; 
+    padding: 0 20px;
 }
 
 .navbar ul {
+    display: block;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #002E72;
+    height: 0;
+    transition: height 200ms ease-out;
+}
+
+.navbar ul.show {
+    display: block;
+    height: 360px;
 }
 
 .navbar img {
@@ -91,24 +105,38 @@ h3{
     height: 100%;
 }
 
-.navbar li {
-    display: inline;
-    width: 10%;
+.navbar .center-img {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0%;
+    max-width: 200px;
+    margin-left: 30px;
+}
+
+.navbar .logo {
+    height: 40px;
+}
+
+.navbar ul li {
+    height: 60px;
+    display: none;
+}
+
+.navbar ul.show li {
+    display: block;
 }
 
 .navbar a {
     font-size: 12px;
     font-weight: 900;
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    padding: 10px;
+    height: 100%;
+    display: flex;
     color: white;
     text-decoration: none;
-    text-align: center;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px; 
 }
 
 .navbar a:hover {
@@ -118,92 +146,12 @@ h3{
     border-color: #FFF200;
 }
 
-.menu-icon {
-    display: none;
+.navbar .menu-icon {
     font-size: 2rem;
     cursor: pointer;
     color: #ffffff;
 }
 
 .scroll-container {
-    margin-top: 40px;
-}
-
-@media (max-width: 1200px) {
-    h1 {
-        font-size: 40px;
-        margin-top: 0px;
-        margin-bottom: 30px;
-    }
-
-    h3 {
-        font-size: 15px;
-        text-align: center;
-        margin: 0px;
-    }
-
-    .navbar > a {
-        font-size: 10px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .scroll-container{
-        -webkit-scroll-snap-type: unset;
-            -ms-scroll-snap-type: unset;
-                scroll-snap-type: unset;
-    }
-
-    .section{
-        height: fit-content;
-        min-height: 100vh;
-    }
-
-    h1 {
-        font-size: 40px;
-        margin-top: 0px;
-        margin: 40px;
-    }
-
-    .aux-img{
-        display: none;
-    }
-    .navbar ul {
-        display: none; /* Oculta la lista por defecto */
-        flex-direction: column;
-        align-items: end;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        background-color: #002E72;
-    }
-
-    .navbar ul.show {
-        display: flex; /* Muestra la lista cuando se hace clic en el ícono */
-        justify-content: center;
-        align-items: start;
-    }
-
-    .menu-icon {
-        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
-    }
-
-    .navbar img {
-        width: 40px; /* Ajusta el tamaño del logo para pantallas pequeñas */
-    }
-
-    .navbar li {
-        display: inline;
-        width: 100%;
-    }
-
-    .navbar a {
-        text-align: start;
-        width: 100%;
-        border-style: none;
-        border-width: 0px;
-    }
 }
 

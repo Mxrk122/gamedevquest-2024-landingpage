@@ -1,35 +1,29 @@
-.agenda-container{
-    background-image: url('../resources/SVG/Desktop/sec5/BG_S5.svg');
-    align-items: end;
+.agenda-container {
+    background-image: url('../resources/SVG/Desktop/sec2/BG_S2.svg');
+    align-items: center;
+    background-color: #002e72;
+    padding: 200px 0; 
+    background-size: contain;
+    background-position: right;
 }
 
-.agenda{
-    width: 60%;
-    padding-right: 50px;
-}
-
-.agenda > h1{
+.agenda > h1 {
+    margin-bottom: 20px;
     color: #FFF200;
     margin-top: 0px;
 }
 
-.agenda > h2{
+.agenda > h2 {
     font-size: 30px;
     text-align: center;
 }
 
-.agenda > h3{
+.agenda > h3 {
     font-size: 18px;
     text-align: center;
 }
 
-.agenda > button{
+.agenda > button {
     background-color: #00B6F8ff;
 }
 
-@media (max-width: 1050px) {
-    .agenda{
-        width: 100%;
-        padding: 0px;
-    }
-}
