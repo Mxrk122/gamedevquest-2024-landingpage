@@ -44,4 +44,6 @@
     z-index: 1;
 }
 
-
+.end-container p {
+    max-width: 500px;
+}
